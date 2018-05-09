@@ -1,21 +1,10 @@
 # COMP2322 Project - Resumable HTTP Downloader
 
-## Instructions
-
-### Python version (team1.py)
-
-Simply run the team1.py in Python 3 to execute the program
-
-### Java version (team1.downloader)
+## Instructions for team1.downloader
 
 Build this project as '.jar' and execute the following command in terminal (where you .jar file is located):
 ```
 java -jar team1-downloader.jar "<url>" <path>
-```
-
-Alternatively, you can use javac to compile all java files and run this command:
-```
-java team1.downloader.AppMain "<url>" <path>
 ```
 
 #### Testing - download node.js package
@@ -28,6 +17,18 @@ java team1.downloader.AppMain "https://nodejs.org/dist/v8.11.1/node-v8.11.1-linu
 With .jar package:
 ```
 java -jar team1-downloader.jar "https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz" ./test-dir
+```
+
+#### Testing - download team1.txt
+
+With raw java class:
+```
+java team1.downloader.AppMain "http://158.132.255.107:25003/project/team1.txt" test-dir
+```
+
+With .jar package:
+```
+java -jar team1-downloader.jar "http://158.132.255.107:25003/project/team1.txt" test-dir
 ```
 
 #### Notes:
